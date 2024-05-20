@@ -1,0 +1,35 @@
+Sentiment Analysis Project
+
+Project Overview
+This project focuses on performing sentiment analysis on a dataset containing tweets. The goal is to
+classify tweets into different sentiment categories using machine learning techniques.
+Data Source
+The data used in this project comes from Kaggle, comprising training and test datasets for sentiment
+analysis.
+Data Processing
+- Data Loading: The datasets were loaded using Pandas, and missing values were checked.
+- Data Cleaning: Rows with missing values were removed from both training and test datasets.
+Exploratory Data Analysis (EDA)
+- Sentiment Distribution by Time of Tweet: A count plot was created to visualize the distribution of
+sentiments over different times of the day.
+- Sentiment Distribution by Age of User: A bar plot was used to show the distribution of sentiments
+across different age groups of users.
+Feature Engineering
+- Text Data: Text data was tokenized and converted into sequences.
+- Categorical Data: Categorical features such as 'Time of Tweet', 'Age of User', and 'Country' were
+one-hot encoded.
+- Numerical Data: Numerical features like 'Population -2020', 'Land Area (Km²)', and 'Density
+(P/Km²)' were normalized using a standard scaler.
+
+Model Training
+A neural network model was trained using the processed features:
+- Text data sequences
+- One-hot encoded categorical data
+- Normalized numerical data
+Predictions
+A function was created to preprocess the test data and make predictions using the trained model.
+This function handles missing data appropriately, prepares text, categorical, and numerical inputs,
+and generates sentiment predictions.
+Evaluation
+The model's performance was evaluated using a classification report, comparing the predicted
+labels against the actual labels.
